@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native'
 
 const style = StyleSheet.create({
     container: {
-        backgroundColor: 'blue',
+        backgroundColor: '#eee',
         justifyContent: 'center',
         alignItems: "center",
         height: 60,
@@ -15,7 +15,7 @@ const style = StyleSheet.create({
     },
     text: {
         fontSize: 25,
-        color: "white"
+        color: "black"
     }
 })
 

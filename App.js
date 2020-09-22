@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <View>
         <Header title="Product List"/>
-        <Text>Product List</Text>
+        <Text>Hello world</Text>
       </View>
     )
   }
