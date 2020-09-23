@@ -30,7 +30,7 @@ class ProductList extends Component {
 
     render() {
         return (
-            <ScrollView>
+            <ScrollView style= { { marginBottom: 70 }}>
                 {this.renderProducts() }
             </ScrollView>
         );

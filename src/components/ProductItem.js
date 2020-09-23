@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, Linking} from 'react-native';
 
 import Card from './Card'
 import CardSection from './CardSection'
+import Button from './Button'
 
 const style = StyleSheet.create({
     image : {
@@ -16,7 +17,6 @@ const style = StyleSheet.create({
     price: {
         fontSize: 18,
         color: 'navy',
-        textAlign: 'right',
         width: 100
         
     }
@@ -51,7 +51,13 @@ class ProductItem extends Component {
                 <Text style = {style.name}>
                     { name }</Text>
                 <Text style = {style.price}>
-                    { this.getPriceFormatted(price) }</Text>
+                    { this.getPriceFormatted(price) }
+                </Text>
+                </CardSection>
+                <CardSection>
+                    <Button onPress={ () => Linking.openURL(actionLink)}>
+                        Buy now
+                    </Button>
                 </CardSection>
             </Card>
         )
